@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@500&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,200&display=swap');
+
+/*
+     Step 6 Project: Implement the frontend and
+     backend of your web application
+         
+    Instructor Schedule DB Group 9
+    Author: Roger Diaz
+    Date:  2021-11-25
+   
+    Filename: db_index_styles.css
+
+*/
+
+/* HTML and Body Styles*/
+html {
+    background-color: rgb(7, 62, 90);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(118, 205, 248);
+    color: rgb(29, 28, 28);
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* Header Style */
+
+header h1 {
+    background-color: rgb(204, 236, 240);
+    font-weight: bold;
+    font-size: 2em;
+    padding:30px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/*Article Style*/
+article {
+    background-color: rgb(204, 236, 240);
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*Section Style*/
+
+section#selecStatement p{
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section#options div {
+    font-size: 1em;
+    padding: 15px;
+    display: block;
+    border-style: double;
+    text-align: center;
+}
+
+section#options div a {
+    text-decoration: none;
+}
+
+section#options div a:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+/*Footer Style*/
+
+footer {
+    background-color: rgb(204, 236, 240);
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-width: 3px;
+}

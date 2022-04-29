@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--
+         Step 6 Project: Implement the frontend and
+         backend of your web application
+         
+         Instructor Schedule DB Group 9
+         Author: Roger Diaz
+         Date:  2021-11-25
+   
+         Filename: db_queries.html
+   
+      -->
+
+    <title> Queries in the Course_Section table </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/db_data_styles.css" rel="stylesheet" />  
+</head>
+
+<body>
+    <h1> Select the query you want to display in the Course_Section table </h1>
+     <form  action="php/queryAll.php" method="post">
+        <fieldset>
+            <legend> Display all the courses and sections of the table: </legend>
+            <br />
+             <div class="buttons">
+                <input type="submit" value="Submit" />
+             </div>       
+        </fieldset>
+     </form>
+
+     <form action="php/queryDevMode.php" method="post">
+        <fieldset>
+            <legend> Display all the courses and sections taught in a particular delivery mode: </legend>
+            <div class="formRow">
+                <label> Delivery Mode: </label>
+                 <fieldset class="deliverymode">
+                   <label for="online">Online</label>
+                      <input name="deliverymode" id="online" value="online" type="radio" required />
+                   <label for="presential">Presential</label>
+                      <input name="deliverymode" id="presential" value="presential" type="radio" required/>
+                   <label for="presential">Semi-presential</label>
+                      <input name="deliverymode" id="semi-presential" value="semi-presential" type="radio" required />
+                   </fieldset>
+             </div>   
+             <div class="buttons">
+                <input type="submit" value="Submit" />
+             </div>   
+        </fieldset>
+     </form>
+
+     <form action="php/querySemester.php" method="post">
+
+        <fieldset>
+            <legend> Display all the courses and sections taught in a particular semester: </legend>
+            <div class="formRow">
+                <label for="semester"> Select a semester: </label>
+                <select name="semester" id="semester">
+                   <option value="selectsemester" selected>Select the semester</option>
+                   <option value="Summer2021">Summer 2021</option>
+                   <option value="Fall2021"> Fall 2021</option>
+                   <option value="Winter2021">Winter2021</option>
+                   <option value="Summer2022">Summer 2022</option>
+                   <option value="Fall2022"> Fall 2022</option>
+                   <option value="Winter2022">Winter2022</option>
+                </select>
+             </div>
+             <div class="buttons">
+                <input type="submit" value="Submit" />
+             </div>       
+        </fieldset>
+     </form>
+
+
+     <div id="return"> <a href="db_index.html">Return to the home page</a></div>
+</body>

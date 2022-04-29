@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--
+         Step 6 Project: Implement the frontend and
+         backend of your web application
+         
+         Instructor Schedule DB Group 9
+         Author: Roger Diaz
+         Date:  2021-11-25
+   
+         Filename: db_insertdata.html
+   
+      -->
+
+    <title> Insert data into the Course_Section table </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/db_data_styles.css" rel="stylesheet" />  
+</head>
+
+<body>
+    <h1> Insert data into the Course_Section table </h1>
+    <p> The information you provide here is private
+        and confidential. It will not be shared.</p>
+
+     <p> Please, complete the form below. </p>
+     <form action="php/insertValues.php" method="post">
+
+        <fieldset>
+            <legend> Enter the information of the course: </legend>
+            <div class="formRow">
+                <label for="courseid"> Course Id: </label>
+                <input name="courseId" id="courseid" type="number" placeholder="enter course Id" required />
+             </div>
+ 
+             <div class="formRow">
+                <label for="sectionid"> Section Id: </label>
+                <input name="sectionId" id="sectionid" type="number" placeholder="enter section Id" required />
+             </div>
+
+             <div class="formRow">
+                <label for="semester"> Semester: </label>
+                <select name="semester" id="semester">
+                   <option value="selectsemester" selected >Select the semester</option>
+                   <option value="Summer2021">Summer 2021</option>
+                   <option value="Fall2021"> Fall 2021</option>
+                   <option value="Winter2021">Winter2021</option>
+                   <option value="Summer2022">Summer 2022</option>
+                   <option value="Fall2022"> Fall 2022</option>
+                   <option value="Winter2022">Winter2022</option>
+                </select>
+             </div>
+
+             <div class="formRow">
+                <label> Delivery Mode: </label>
+                 <fieldset class="deliverymode">
+                   <label for="online">Online</label>
+                      <input name="deliverymode" id="online" value="online" type="radio" required/>
+                   <label for="presential">Presential</label>
+                      <input name="deliverymode" id="presential" value="presential" type="radio" required/>
+                   <label for="presential">Semi-presential</label>
+                      <input name="deliverymode" id="semi-presential" value="semi-presential" type="radio" required/>
+                   </fieldset>
+             </div>
+
+             <div class="formRow">
+                <label for="instructorid"> Instructor Id: </label>
+                <input name="instructorId" id="instructorid" type="number" placeholder="enter instructor Id" required />
+             </div>
+
+             <div class="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+             </div>       
+        </fieldset>
+     </form>
+
+     <div id="return"> <a href="db_index.html">Return to the home page</a></div>
+</body>

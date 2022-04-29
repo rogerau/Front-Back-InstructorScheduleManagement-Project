@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--
+         Step 6 Project: Implement the frontend and
+         backend of your web application
+         
+         Instructor Schedule DB Group 9
+         Author: Roger Diaz
+         Date:  2021-11-25
+   
+         Filename: db_deletedata.html
+   
+      -->
+
+    <title> Delete records in the Course_Section table </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/db_data_styles.css" rel="stylesheet" />  
+</head>
+
+<body>
+    <h1> Delete records in the Course_Section table </h1>
+     <p> Insert the course and section id of the record you want to delete below. </p>
+     <form action="php/deleteRecord.php" method="post">
+        <fieldset>
+            <legend> Enter the course and section id: </legend>
+            <div class="formRow">
+                <label for="courseid"> Course Id: </label>
+                <input name="courseId" id="courseid" type="number" placeholder="enter course Id" required />
+             </div>
+ 
+             <div class="formRow">
+                <label for="sectionid"> Section Id: </label>
+                <input name="sectionId" id="sectionid" type="number" placeholder="enter section Id" required />
+             </div>
+             <div class="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+             </div>       
+        </fieldset>
+     </form>
+
+     <div id="return"> <a href="/db_index.html">Return to the home page</a></div>
+</body>
